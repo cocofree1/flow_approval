@@ -3,10 +3,11 @@ package lib
 import (
 	"encoding/json"
 	"github.com/astaxie/beego"
+	"strconv"
 	"strings"
 )
 
-func ParseRequestParams(inputStruct interface{},c *beego.Controller)(r ResultInfo){
+func ParseRequestBody(inputStruct interface{},c *beego.Controller)(r ResultInfo){
 	var err error
 	body := c.Ctx.Input.RequestBody
 	strReqBody := strings.TrimSpace(string(body))
@@ -18,5 +19,15 @@ func ParseRequestParams(inputStruct interface{},c *beego.Controller)(r ResultInf
 	if r.IsOk(){
 		r.Data = inputStruct
 	}
+	return
+}
+
+func ParseRequestParams(c *beego.Controller)(r ResultInfo){
+	params := c.Ctx.Input.Params()
+	id,err := strconv.Atoi(params[":id"])
+	if err != nil{
+		r = ErrorResulInfo(ERR_STRING_TO_INT,err.Error(),nil,err)
+	}
+	r.Data = id
 	return
 }

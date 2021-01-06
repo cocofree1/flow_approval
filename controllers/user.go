@@ -14,7 +14,7 @@ type UserController struct {
 func(user *UserController)UserLogin(){
 	var r lib.ResultInfo
 	var input request.UserLogin
-	r = lib.ParseRequestParams(&input,&user.Controller)
+	r = lib.ParseRequestBody(&input,&user.Controller)
 	if r.IsOk(){
 		r = models.UserLogin(input)
 	}
@@ -25,7 +25,7 @@ func(user *UserController)UserLogin(){
 func(user *UserController) UserRegister(){
 	var r lib.ResultInfo
 	var input request.UserRegister
-	r = lib.ParseRequestParams(&input,&user.Controller)
+	r = lib.ParseRequestBody(&input,&user.Controller)
 	if r.IsOk(){
 		r = models.UserRegister(input)
 	}

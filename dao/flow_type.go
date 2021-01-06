@@ -2,11 +2,9 @@ package dao
 
 import "time"
 
-// 每个节点对应的审批组
-type ApprovalGroup struct{
+type FlowType struct{
 	Id           int       `orm:"column(id);auto;pk" json:"id"`
-	GroupName    string    `orm:"column(group_name)"`
-	UserIds      string    `orm:"column(user_ids)" description:"用户IDs"`
+	TypeName     string    `orm:"column(type_name);size(64)"`
 	Description  string    `orm:"column(description)"`
 	DFlag        int       `orm:"column(dflag);size(11)" description:"删除标志"`
 	CreatedAt    time.Time `orm:"column(created_at)" json:"created_at" description:"创建日期"`

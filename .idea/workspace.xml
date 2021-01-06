@@ -1,7 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="abf2e8f3-0a58-403f-9502-a13fc0a19a81" name="Default Changelist" comment="" />
+    <list default="true" id="abf2e8f3-0a58-403f-9502-a13fc0a19a81" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/controllers/flow.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/controllers/node.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dao/flow_type.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dao/node_instance.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/approval_group.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/flow_instance.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/flow_item.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/flow_node.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/node_instance.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/request/flow.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/request/node.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/routers/flow.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/routers/node.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/user.go" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/user.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/approval_group.go" beforeDir="false" afterPath="$PROJECT_DIR$/dao/approval_group.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/flow_instance.go" beforeDir="false" afterPath="$PROJECT_DIR$/dao/flow_instance.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/flow_item.go" beforeDir="false" afterPath="$PROJECT_DIR$/dao/flow_item.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/flow_node.go" beforeDir="false" afterPath="$PROJECT_DIR$/dao/flow_node.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/init.go" beforeDir="false" afterPath="$PROJECT_DIR$/dao/init.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/error.go" beforeDir="false" afterPath="$PROJECT_DIR$/lib/error.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/request.go" beforeDir="false" afterPath="$PROJECT_DIR$/lib/request.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/request/request_struct.go" beforeDir="false" afterPath="$PROJECT_DIR$/request/user.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routers/router.go" beforeDir="false" afterPath="$PROJECT_DIR$/routers/router.go" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -15,6 +40,9 @@
     </option>
   </component>
   <component name="GOROOT" url="file://C:/Go" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="GoLibraries">
     <option name="indexEntireGoPath" value="false" />
     <option name="urls">
@@ -24,6 +52,7 @@
     </option>
   </component>
   <component name="ProjectId" id="1lfx2I2iu79LplVBKHW94ep9X1Z" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -38,7 +67,7 @@
     <property name="go.import.settings.migrated" value="true" />
     <property name="go.sdk.automatically.set" value="true" />
     <property name="go.tried.to.enable.integration.vgo.integrator" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../dxm/siod-cloud/fsg-resource" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -54,6 +83,16 @@
     </key>
   </component>
   <component name="RunManager">
+    <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
+      <module name="flow_approval" />
+      <working_directory value="$PROJECT_DIR$" />
+      <go_parameters value="-i" />
+      <kind value="FILE" />
+      <filePath value="$PROJECT_DIR$" />
+      <package value="flow_approval" />
+      <directory value="$PROJECT_DIR$" />
+      <method v="2" />
+    </configuration>
     <configuration name="go build flow_approval" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="flow_approval" />
       <working_directory value="$PROJECT_DIR$" />
@@ -61,6 +100,17 @@
       <filePath value="$PROJECT_DIR$/test.go" />
       <package value="flow_approval" />
       <directory value="$PROJECT_DIR$" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="GoTestRunConfiguration" factoryName="Go Test">
+      <module name="flow_approval" />
+      <working_directory value="$PROJECT_DIR$" />
+      <go_parameters value="-i" />
+      <framework value="gotest" />
+      <kind value="DIRECTORY" />
+      <package value="flow_approval" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
       <method v="2" />
     </configuration>
     <recent_temporary>
